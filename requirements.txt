@@ -1,0 +1,5 @@
+microsoftbotframework
+gunicorn
+PyJWT
+pymorphy2
+apiai
