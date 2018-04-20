@@ -5,7 +5,7 @@ import pymorphy2
 import re
 
 # azure boot camp
-CLIENT_ACCESS_TOKEN = '4a54add1f6db4368bc77350336602147'
+CLIENT_ACCESS_TOKEN = '%%%%'
 ai = apiai.ApiAI(CLIENT_ACCESS_TOKEN)
 ma = pymorphy2.MorphAnalyzer()
 
@@ -31,7 +31,7 @@ def qamaker(message):
     question = text
     request = ai.text_request()
     request.lang = 'ru'
-    request.session_id = "4a54add1f6db4368bc77350336602147"
+    request.session_id = "%%%"
     request.query = question
     answer = json.loads(request.getresponse().read().decode('utf-8'))
     if answer:
